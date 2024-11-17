@@ -1,0 +1,31 @@
+.dotgrid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 280px;
+    background-color: #000000;
+}
+
+.dotgrid-field {
+    width: 40px;
+    height: 40px;
+}
+
+.dotgrid-dot {
+    width: 40px;
+    height: 40px;
+    transform: scale(0.1);
+    background-color: #00ff00;
+    box-shadow: 0 0 10px #00ff00,
+        0 0 20px #00ff00,
+        0 0 40px #00ff00,
+        0 0 60px #00ff00,
+        0 0 80px #00ff00,
+        0 0 100px #00ff00;
+
+    transition: transform 1.5s ease-in;
+}
+
+.dotgrid-field:hover .dotgrid-dot {
+    transform: scale(0.4);
+    transition: transform 0.1s ease-out;
+}
